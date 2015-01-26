@@ -44,7 +44,7 @@ public final class FibonacciHeap{
 
     public Node min() {
     	if (isEmpty())
-    		throw new NoSuchElementException("Heap is empty.");
+    		throw new NoSuchElementException("Fibonacci Heap is empty.");
     	return mMin;
     }
        
@@ -157,7 +157,7 @@ public final class FibonacciHeap{
 
     /**
      * Decreases the key of the specified element to a new priority.
-     * Please make sure the entry is in the FHeap, I do not check this. 
+     * Please make sure the node is in the FHeap. 
      */
     public void decreaseKey(Node node, int newPriority) {
     	
@@ -178,7 +178,7 @@ public final class FibonacciHeap{
     }
     
     /**
-     * Deletes this Entry from the Fibonacci heap that contains it.
+     * Deletes this Node from the Fibonacci heap that contains it.
      * Please make sure the entry is in the FHeap, I do not check this. 
      */
     public void delete(Node node) {
